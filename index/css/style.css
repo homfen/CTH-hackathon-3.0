@@ -1,0 +1,156 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    position: relative;
+    left: 70px;
+    top: 0;
+    width: 1150px;
+}
+
+.sidebar{
+    position: fixed;
+    width: 70px;
+    background: rgb(78, 190, 203);
+    left: 0;
+    top:0;
+    bottom:0;
+}
+.sidebar ul{
+    height: 132px;
+    position: absolute;
+    top: 50%;
+    margin-top: -66px;
+    width: 100%;
+}
+.sidebar li{
+    cursor: pointer;
+    padding: 2px;
+    color: white;
+    margin-bottom: 15px;
+}
+.sidebar li:first-of-type{
+    color: rgb(78, 190, 203);
+  background: #F8FAFA;
+}
+
+.sidebar li:hover{
+      color:rgb(78, 190, 203);
+  background: #F8FAFA;
+}
+
+.sidebar span{
+    display: block;
+    text-align: center;
+}
+.pin {
+    padding: 15px 0 0 15px;
+    float: left;
+}
+
+.box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 6px #ccc;
+    border-radius: 5px;
+}
+
+.box img {
+    width: 250px;
+    height: auto;
+}
+
+.theme-popover-mask {
+    z-index: 98;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    display:none;
+}
+
+.theme-popover {
+    z-index:99;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:700px;
+    margin:-325px 0 0 -350px;
+    border-radius:5px;
+    border:solid 2px #666;
+    background-color:#fff;
+    display:none;
+    box-shadow: 0 0 10px #666;
+}
+
+.setting-popover {
+    z-index:99;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:700px;
+    margin:-325px 0 0 -350px;
+    border-radius:5px;
+    border:solid 2px #666;
+    background-color:#fff;
+    display:none;
+    box-shadow: 0 0 10px #666;
+}
+
+ .close {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    color:#999;
+    text-shadow:0 1px 0 #ddd;
+    z-index: 100;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+ .close:hover {
+    color:#444;
+}
+.icon{
+    font-size: 32px !important;
+      text-align: center;
+  display: block;
+}
+.title,.place,.author{
+    width:250px;/*对宽度的定义,根据情况修改*/
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+.title{
+    font-size: 20px;
+
+}
+.place{
+font-size: 18px;
+}
+.author {
+  font-size: 15px;
+}
+
+.recommend-title{
+    text-align: center;
+}
+.box img{
+    cursor: pointer;
+}
